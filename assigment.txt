@@ -1,0 +1,555 @@
+1.
+we can call python a general purpose language as well as high-level programming language as it can program various problems, it is not
+specific to any type of problem and it is in human understandable form.
+
+2.
+python is dynamically typed because type of the variable is detmine during runtime.
+
+3.
+pros
+Python is free, open-source
+Python has collection of libraries
+python is Object-oriented
+
+cons
+Python can have runtime errors
+python is not memory efficient
+python has speed liitations
+
+4.
+Data Science
+Application Development 
+Console Applications
+artificial intellegence/machine learning
+
+5.
+Variable is a container that stores some value. In python variable are declared when they are assigned with some value.
+
+6.
+we can input in python using input() method.
+
+7.
+default datatype of the value that has been taken as an input using input() function is string.
+
+8.
+type casting refers to the conversion of one data type into another.
+
+9.
+Yes we can take mutipliple input in single line.It can be achieved using spilt() function.
+a,b = input("Input two values").split()
+
+10
+Keywords are special words which have a specific purpose and cannot be used for anyother work.
+
+11.
+No we cannot use keyword as a variable as they are assigned with a speical puropse hence has a difinite meaning within the
+programming environment.
+
+12.
+Indentation refers to the spaces at beginning of the line. In python indentation indicates the block of code.
+
+13.
+We can throw output using print() method while methods can throw output using return statement.
+
+14.
+Operators are special symbols that perform some operations on variables and values.
+Types of operator:
+Arithmetic operators
+Assignment Operators
+Comparison Operators
+Logical Operators
+Bitwise Operators
+
+15.
+Both operator are use for division. / returns the float value while // returns the integer.
+
+16.
+for i in range(4):
+    print("iNeuron",end = "")
+
+17.
+n = int(input("enter the number"))
+if(n%2==0):
+    print("even")
+else:
+    print("odd")
+
+18.
+Boolean operators returns value in True or False.I takes one or more operand and returns true or false based on operand.
+for eg .AND,OR,NOT.
+
+19.
+1 or 0                           --> 1
+
+0 and 0                          --> 0
+
+True and False and True          --> False
+
+1 or 0 or 0                      --> 1
+
+20.
+conditional statement in python are decision making statements that guide the program while making decisions based on the 
+conditions encountered by the program.
+There are three type of conditional statement:
+if statement
+if-else statement
+if-elif-else ladder
+
+21.
+if statement
+If the condition inside if evaluates as true, the block of code will execute. 
+else statement
+it contains the reponse which will be executed which condition inside if fails.
+else statement
+elif statement is used to check multiple condition after the if statement.
+
+22.
+n = int(input("enter the age"))
+if(n>18):
+    print("I can vote")
+else:
+    print("I can't vote")
+
+23.
+numbers = [12, 75, 150, 180, 145, 525, 50]
+total = 0
+for i in numbers:
+    if(i%2==0):
+        total = total + i
+print(total)
+
+24.
+a = int (input ("enter the first number"))
+b = int (input ("enter the second number"))
+c = int (input ("enter the first number"))
+if(a>b and a>c):
+    print(a,"is grater")
+elif(b>a and b>c):
+    print(b,"is grater")
+else:
+    print(c,"is greater")
+
+26.
+Python is sequence of characters which is immutable.We can declare string in python using "".
+for eg. stringname = "
+
+27.
+We can access the characters of string using their respective index.
+
+28.
+string = "Big Data iNeuron"
+desired_output = string[9:: ]
+print(desired_output)
+
+29.
+string = "Big Data iNeuron"
+str_rev = string[::-1]
+desired_output = str_rev[0:7]
+print(desired_output)
+
+30.
+string = "Big Data iNeuron"
+str_rev = string[::-1]
+print(str_rev)
+
+31.
+escape sequence is sequence of character which are themselves not presented butt
+
+33.
+print("'iNeuron's Big Data Course'")
+
+34.
+The list is a sequence data type which is used to store the collection of differnt 
+type of data.
+
+35.
+List can be created by placing elements inside the square bracket[] seprated by comma.
+
+36.
+We can access the elements of list using there respective index.
+
+37.
+lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+print(lst[4][2])
+
+38.
+lst = []
+n = int(input("Enter number of elements : "))
+for i in range(0,n):
+    a = input()
+    lst.append(a) 
+print(len(lst))
+
+39.
+lst = ["Welcome", "to", "Data", "course"]
+lst.insert(3,"Big")       
+print(lst)
+
+40.
+Tuple is Sequence data type contains elements of different data types, and they are immutable.
+
+41.
+Tuple can be created by keeping the element in parenthesis () seperated by comma.
+
+42.
+we cannot add our name in tuple as tuples are immutable.
+
+43.
+No two tuples cannot be appended as appened function is not applicable for tuples.
+
+44.
+values = input("Input some comma seprated numbers : ")
+list1 = values.split(",")
+tuple1 = tuple(list1)
+print(len(tuple1))
+
+45.
+Set is unordered collection of data which is mutable and keeps no duplicate elements.
+
+46.
+A set is created by placing all the items (elements) inside curly braces {} separated by comma.
+
+47.
+my_set = {"abc","xyx"}
+my_set.add("iNeuron")
+print(my_set)
+
+48.
+We cannot multiple values in set using add() funtion.
+
+49.
+Update() is used to add multiple elements in a set while add() is used to add single elelement.
+
+50.
+clear() is a method which is used to remove all the elemets in set.
+
+51.
+Frozen set are set which which are immutable in nature.
+
+52.
+set are mutable in nature where as frozen set are immutable.
+
+53.
+union of set returns the set which contain the elements of all sets as well as common elements of 
+all list.
+set1 = {"a", "b", "c"}
+set2 = {"f", "d", "c"}
+result = set1.union(set2) 
+print(result)
+
+54.
+intersection() returns the common element of all sets.
+set1 = {"a", "b", "c"}
+set2 = {"f", "d", "c"}
+result = set1.intersection(set2) 
+print(result)
+
+55.
+Dictionary is collection of data which stores the data in form of key value pair.
+
+56.
+In other data structures data is stored individually where as in dictionary data is stored as key value pair.
+
+57.
+We can create dictionary in two ways.
+dict1 = {}
+dict1 = dict()
+
+58.
+var = {}
+print(type(var))
+output - <class 'dict'>
+
+59.
+we can add an element in the dictionary using update() method.
+dict1 = {'key1': 'abc', 'key2': 'xyz'}
+dict1.update({'key3': 'qwe'})
+print(dict1)
+
+60.
+dict1 = {'key1': 'abc', 'key2': 'xyz','key3': 'qwe'}
+print(dict1.values())
+
+61.
+dict1 = {
+  "Name" : {
+    "first_name" : "Rishabh",
+    "last_name" :  "Trivedi"
+  },
+  "Address" : "Kanpur"
+  }
+print(dict1["Name"])
+
+62.
+get() returns the value of the key specified if that key value pair is present in dictionary otherwise
+it geive none.It can give difault value if provided.
+
+63.
+item() method returns the list of all key value pair in dictionary.
+
+64.
+pop() method removes the element at the specified position.
+
+65.
+popitems() function removes the last inserted element in the dictionary.
+
+66.
+keys() function returns all the keys present in dictionary.
+
+67.
+values() function returns all the values present in dictionary.
+
+68.
+loops are used to execute block of statement repeatidly until certail condition is met.
+
+69.
+There are two type of loops in python
+while loop
+for loop
+
+70.
+while loop is used when when number of iterations are not known.
+for loop is used when when number of iterations are known.
+
+71.
+continus statement is used to skip the current iteration of loop.
+
+72.
+break statement is used to terminate the loop.
+
+73.
+pass is used when empty code needs to be executed so that that any code can be written it that place in future.
+
+74.
+Range function is sequence of numbers starting from the given start integer to the stop integer followed by
+increment/decrement value(default = 1).
+
+75.
+We can lop over dictionary using for loop.
+dict1 =	{
+  "name": "rishabh",
+  "age": 24,
+  "address": "kanpur"
+}
+for x in dict1.items():
+  print(x)
+
+76.
+num = input("Enter a number: ")
+def factorial(n):
+    if n == 1:
+       return n
+    elif n < 1:
+       return ("cannot be determined")
+    else:
+       return n*factorial(n-1)
+print (factorial(int(num)))
+
+77.
+P = int(input("enter the principle"))
+R = int(input("enter the rate"))
+T = int(input("enter the time"))
+SI = (P*R*T)/100
+print(SI)
+
+78.
+P = int(input("enter the principle"))
+R = float(input("enter the rate"))
+T = int(input("enter the time"))
+A = P*(pow((1+(R/100)),T))
+print(A)
+
+79.
+n = int(input())
+counter = 2
+j = int(n/2)
+for i in range(2,j+1):
+    if(n%i==0):
+        counter = counter + 1
+if(counter == 2):
+    print("prime")
+else:
+    print("not prime")
+
+80.
+n = int(input())
+digits = [int(x) for x in str(n)]
+sum = 0
+for i in digits:
+    sum = sum + pow(i,3)
+if(sum == n):
+    print("Armstrong")
+else:
+    print("not Armstrong")
+
+82.
+n = int(input("enter the number of elements in list"))
+lst = []
+for i in range(n):
+    a = input()
+    lst.append(a)
+ln = len(lst)
+temp = lst[0]
+lst[0] = lst[ln-1]
+lst[ln-1] = temp
+print(lst)
+
+83.
+n = int(input("enter the number of elements in list"))
+lst = []
+for i in range(n):
+    a = input()
+    lst.append(a)
+i1 = int(input("enter the first index to be swapped"))
+i2 = int(input("enter the second index to be swapped"))
+temp = lst[i1]
+lst[i1] = lst[i2]
+lst[i2] = temp
+print(lst)
+
+84.
+n = int(input("enter the number of elements in list"))
+lst = []
+for i in range(n):
+    a = input()
+    lst.append(a)
+lst.sort()
+print(lst)
+print(lst[-1])
+
+85.
+n = int(input("enter the number of elements in list"))
+lst = []
+for i in range(n):
+    a = int(input())
+    lst.append(a)
+cum_lst = []
+s = 0
+for i in lst:
+    s = s + i
+    cum_lst.append(s)
+print(cum_lst)
+
+86.
+str = input("enter the string")
+nstr = str[ ::-1]
+print(nstr)
+if(nstr == str):
+    print("palindrome")
+else:
+    print("not palindrome")
+
+87.
+str = input("enter the string")
+n = int(input("enter the index of element to be removed"))
+lst = [x for x in str]
+del lst[n]
+nstr = ""
+for i in lst:
+    nstr = nstr + i
+print(nstr)
+
+88.
+str1 = input("enter the string")
+str2= input("enter the substring")
+if str2 in str1:
+    print("yes")
+else:
+    print("no")
+
+89.
+n = int(input("enter the number of elements in list"))
+lst = []
+for i in range(n):
+    a = input()
+    lst.append(a)
+K = int(input("enter the required length"))
+for i in lst:
+    if(len(i) > K):
+        print(i)
+
+90.
+dict1 = {
+  "class": "9th",
+  "Name": "Rishabh",
+  "year of birth": 2007,
+  "Second name": "Rishabh"
+}
+lst = []
+for i in dict1.values():
+    if i not in lst:
+        lst.append(i)
+for j in lst:
+    print(j)
+
+91.
+dict1 = {
+  "class": "9th",
+  "Name": "Rishabh",
+  "year of birth": 2007,
+}
+dict2 = {
+  "school name": "oxford",
+  "City": "Kanpur"
+}
+dict3 = {**dict1,**dict2}
+print(dict3)
+
+92.
+Input = [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
+Output = dict(Input)
+print(Output)
+
+93.
+list1 = [9, 5, 6]
+list2 = []
+for i in list1:
+    val = pow(i,3)
+    list2.append(val)
+list3 = list(zip(list1, list2))
+print(list3)
+
+94.
+
+
+96.
+for i in range(1,6):
+    for j in range(i):
+        print("*",end = " ")
+    print()
+
+97.
+n = 5
+n1 = n + 1
+for i in range(1,n1):
+    for k in range(1,n1-i):
+        print(" ",end = "")
+    for j in range(i):
+        print("*",end = "")
+    print()
+
+99.
+n = 5
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end = " ")
+    print()
+
+100.
+n = 5
+for i in range(n):
+    for j in range(i+1):
+        print(chr(i+65),end = " ")
+    print()
+
+
+
+
+
+
+
+
+
+
+
+
