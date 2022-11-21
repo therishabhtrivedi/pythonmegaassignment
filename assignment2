@@ -1,0 +1,33 @@
+1.
+kilom  = int(input("enter the distace in kilometers"))
+miles = kilom * 0.621
+print(miles)
+
+2.
+celcius = int(input("enter the temperature in celcius"))
+feh = (celcius * (9/5)) + 32
+print(feh)
+
+
+3.
+import calendar
+yy = 2022
+print(calendar.calendar(yy))
+
+4.
+import math
+a = int(input("enter the value of a"))
+b = int(input("enter the value of b"))
+c = int(input("enter the value of c"))
+x = (b**2) - (4*a*c)
+val1 = (-b-math.sqrt(x))/(2*a)
+val2 = (-b+math.sqrt(x))/(2*a)
+print(val1)
+print(val2)
+
+5.
+a =10
+b =20
+a,b = b,a
+print(a)
+print(b)
