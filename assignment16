@@ -1,0 +1,38 @@
+1.
+def stutterword(word):
+    substring = word[:2]
+    return (substring + '... ' + substring + '...')  + word
+
+word = input("enter the world")
+print(stutterword(word))
+
+2.
+def func(rad):
+    return (round((rad * 57.29),1))
+radian = int(input("enter the radians"))
+print(func(radian))
+
+3.
+def curzon(n):
+    if(n>0):
+        if((1 + 2**n) % (1 + 2*n) == 0):
+            return True
+        else:
+            return False
+    else:
+        print("enter a positive number")
+n = int(input("enter the number"))
+print(curzon(n))
+
+4.
+import math
+n = int(input("enter the side of hexagon"))
+area = round((((3 * math.sqrt(3)) / 2) * (n ** 2)),2)
+print(area)
+
+5.
+def decimalToBinary(n):
+    binary = bin(n)
+    print(binary)
+n = int(input("enter the deciam value"))
+decimalToBinary(n)
